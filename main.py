@@ -32,3 +32,27 @@ def vigenere_encrypt(plaintext: str, key: str) -> str:
 
     return ''.join(ciphertext)
 
+def vigenere_decrypt(ciphertext: str, key: str) -> str:
+
+    plaintext = []
+    key_length = len(key)
+
+    print("\n--- DECRYPTION DETAILS ---")
+    print(f"{'Index':<5} {'Cipher':<7} {'C#':<4} {'Key':<6} {'K#':<4} {'Plain':<6} {'P#':<4}")
+    print("-" * 40)
+
+    for i, char in enumerate(ciphertext.upper()):
+        if char.isalpha():
+            c_num = ord(char) - ord('A')
+            k_char = key[i % key_length]
+            k_num = ord(k_char) - ord('A')
+            p_num = (c_num - k_num + 26) % 26
+            p_char = chr(p_num + ord('A'))
+            plaintext.append(p_char)
+
+            print(f"{i:<5} {char:<7} {c_num:<4} {k_char:<6} {k_num:<4} {p_char:<6} {p_num:<4}")
+        else:
+            plaintext.append(char)
+
+    return ''.join(plaintext)
+
