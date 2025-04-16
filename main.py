@@ -56,3 +56,28 @@ def vigenere_decrypt(ciphertext: str, key: str) -> str:
 
     return ''.join(plaintext)
 
+def main():
+    choice = input("Do you want to encrypt or decrypt? (E/D): ").strip().upper()
+    seed = input("Enter a seed (string or number): ")
+
+    if choice == 'E':
+        message = input("Enter your message to encrypt: ")
+        generated_key = generate_key(seed, len(message))
+        ciphertext = vigenere_encrypt(message, generated_key)
+        print("\nEncryption Results:")
+        print(f"Generated Key: {generated_key}")
+        print(f"Ciphertext: {ciphertext}")
+    elif choice == 'D':
+        ciphertext = input("Enter your ciphertext to decrypt: ")
+        generated_key = generate_key(seed, len(ciphertext))
+        decrypted_text = vigenere_decrypt(ciphertext, generated_key)
+        print("\nDecryption Results:")
+        print(f"Generated Key: {generated_key}")
+        print(f"Decrypted Text: {decrypted_text}")
+    else:
+        print("Invalid choice. Please enter 'E' for encrypt or 'D' for decrypt.")
+
+
+if _name== "main_":
+    main()
+
