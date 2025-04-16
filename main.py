@@ -1,18 +1,9 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import hashlib
+import random
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-    print("test");
-    print("test");
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+def generate_key(seed: str, length: int) -> str:
+    seed_hash = hashlib.md5(seed.encode()).digest()
+    seed_int = int.from_bytes(seed_hash[:4], 'big')
+    random.seed(seed_int)
+    return ''.join(chr(random.randint(65, 90)) for _ in range(length))
