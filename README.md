@@ -52,10 +52,12 @@ DataSecurity-Grupi12/
 - Gjenerimi i çelësit: Inicializojmë random me këtë integer dhe krijojmë çelës rastësor me shkronja të mëdha.
 - Enkriptim/Dekriptim: Operacione Vigenère mbi karakteret alfabetike, me ruajtje të karaktereve jo-alfabetike.
 
-## Universiteti dhe Departamenti
-Universiteti: Universiteti i Prishtinës  
-Fakulteti: Inxhinieri Elektrike dhe Kompjuterike  
-Departamenti: Inxhinieri Kompjuterike dhe Softuerike
+## Institucioni
+Universiteti i Prishtinës "Hasan Prishtina"  
+Fakulteti i Inxhinierisë Elektrike dhe Kompjuterike (FIEK)  
+Departamenti i Inxhinierisë Kompjuterike dhe Softuerike  
+Lënda: Siguria e të Dhënave  
+Prishtinë, Kosovë
 
 ## Anëtarët e Ekipit
 - Dion Haradinaj
