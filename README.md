@@ -49,7 +49,7 @@ Index Plain  P#   Key   K#   Cipher C#
 Encryption Results:
 Generated Key: QWERTYUIOP
 Ciphertext: XAPCHUIZZS!
-
+```
 
 ## Struktura e Projektit
 DataSecurity-Grupi12/
