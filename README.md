@@ -52,11 +52,12 @@ Ciphertext: XAPCHUIZZS!
 ```
 
 ## Struktura e Projektit
+```text
 DataSecurity-Grupi12/
 ├── .idea/                - Cilësimet e IDE
 ├── main.py               - Logjika kryesore
 └── README.md             - Dokumentacioni
-
+```
 ## Detajet e Algoritmit
 - Hash i seed-it: MD5 i seed-it, marrim 4 bajtët e parë për një integer 32-bit.
 - Gjenerimi i çelësit: Inicializojmë random me këtë integer dhe krijojmë çelës rastësor me shkronja të mëdha.
