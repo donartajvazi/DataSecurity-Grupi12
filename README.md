@@ -26,6 +26,7 @@ Ky projekt implementon algoritmin klasik të Vigenère për enkriptim dhe dekrip
 3. Shkruaj mesazhin (plaintext) për enkriptim ose ciphertext për dekriptim.
 4. Shiko tabelën me detajet e konvertimeve numerike dhe rezultatin.
 
+```text
 Shembull:
 Do you want to encrypt or decrypt? (E/D): E
 Enter a seed (string or number): 1234
@@ -34,12 +35,13 @@ Enter your message to encrypt: Hello World
 --- ENCRYPTION DETAILS ---
 Index Plain  P#   Key   K#   Cipher  C#
 ----- -----  ---- ----- ---- ------- ----
-0     H      7    X     23  E       4
+0     H      7    X     23   E       4
 ... (continues) ...
 
 Encryption Results:
 Generated Key: XQZ...Y
 Ciphertext: EBI...
+```
 
 ## Struktura e Projektit
 DataSecurity-Grupi12/
