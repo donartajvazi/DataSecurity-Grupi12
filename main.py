@@ -78,6 +78,6 @@ def main():
         print("Invalid choice. Please enter 'E' for encrypt or 'D' for decrypt.")
 
 
-if _name== "main_":
+if __name__== "__main__":
     main()
 
